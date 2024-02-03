@@ -6,7 +6,7 @@ timezone: Europe/Madrid     # Change to your timezone › https://kevinnovak.git
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
-title: Daniel Garrido
+title: Daniel Garrido Sánchez
 tagline: DevOps and Cloud Engineer
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
