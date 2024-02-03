@@ -1,3 +1,7 @@
+- type: credly
+  icon: "fa-regular fa-solid fa-certificate"
+  url: "https://www.credly.com/users/danielgarridosanchez/badges"
+
 - type: github
   icon: "fab fa-github"
 
@@ -5,14 +9,10 @@
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/danielgarridosanchez/"
 
-- type: credly
-  icon: "fa-regular fa-solid fa-certificate"
-  url: "https://www.credly.com/users/danielgarridosanchez/badges"
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true # open link in current tab
 
-# - type: email
-#   icon: "fas fa-envelope"
-#   noblank: true # open link in current tab
-
-# - type: rss
-#   icon: "fas fa-rss"
-#   noblank: true
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
