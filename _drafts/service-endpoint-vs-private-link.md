@@ -66,4 +66,22 @@ Hay que tener en cuenta que la falta de experiencia realizando implantaciones de
 
 ### Private Link Service
 
-TO DO
+En ocasiones, cuando se quiere ofrecer acceso algún tipo de servicio a un cliente como podría ser una BBDD y no queremos que esté expuesta a internet, la solución más inmediata que se nos ocurriría seria montar una VPN entre nuestra red y la red del cliente, pero podemos encontrar una alternativa más sencilla si ambos nos encontramos en Azure.
+
+El Private Link Service se aprovecha de la tecnología de private endpoint para generar un túnel directo entre la red del cliente y la nuestra, permitiendo compartir solo al servicio sin exponer el resto de servicios que podríamos tener en la misma red.
+
+![Private Link Service drawing](private-link-service-drawing.png){: w="800" }
+
+Para poner a prueba esta configuración, vamos a necesitar un **Load Balancer** estándar, que junto a una configuración de backend que le establezcamos, podremos exponer un servicio. Cuando tengamos listo el load balancer, procedemos a crear el private link service y deberemos establecerle una red propia donde se desplegá y definirle que tipo de auto aprobación deseamos, todos los que no cumplan con ese requisito, tendrán que ser aprobados manualmente.
+
+![Private Link Service config 1](private-link-service-config-1.png){: w="800" }
+
+Una vez creado el private link service, si entramos dentro del servicio, en el overview podremos encontrarnos con el *alias*, que es el enlace que tendremos que compartir con el cliente para que tome como referencia al montar el private endpoint. Una vez que este creado, dependiendo de la configuración que hayamos establecido previamente, se autoaprobara la conexión del service endpoint o habrá que realizarla a mano.
+
+![Private Link Service config 2](private-link-service-config-2.png){: w="800" }
+
+Como podemos ver, este tipo de configuración es más sencilla que tener que configurar una VPN y seguramente las latencias serán inferiores, ya que la comunicación no saldrá de la red interna de Microsoft dentro de sus CPDs. Este tipo de configuraciones serán las ideales para ciertas situaciones, pero son raras de ver porque la mayoría de los equipos de redes la desconocen.
+
+## Conclusiones
+
+a
