@@ -84,4 +84,6 @@ Como podemos ver, este tipo de configuración es más sencilla que tener que con
 
 ## Conclusiones
 
-a
+Como hemos podido, cada tecnología tiene un enfoque diferente y unos costes diferentes, que dependiendo de cada situación, sea más recomendable utilizar una u otra o ambas. A mí se me han dado situaciones en cliente donde he implementado tanto el service endpoint como el private endpoint para cumplir objetivos diferentes aunque sean tecnologías muy similares con funcionalidad muy similar.
+
+Podemos resumir que la tecnología de service endpoint fue la primera en implantarse en Azure y que es las mejor para el bolsillo de los clientes, ya que no tiene un coste adicional, pero para las situaciones donde se debe controlar todo el flujo del tráfico, sobre todo en topologías Hub&Spoke, la tecnología de private link prima sobre la otra aunque suponga un coste adicional.
