@@ -2,7 +2,7 @@
 title: Diferencias entre Service Endpoint y Private Link
 categories: [Azure, Networking]
 tags: [virtual network, private link, private endpoint]
-# date: 2024-XX-XX 10:50:00 +0100
+date: 2024-02-11 12:10:00 +0100
 img_path: assets/img/posts/azure/service-endpoint-vs-private-link
 image: cover.png
 author: gareda
