@@ -1,20 +1,19 @@
-# The Site Configuration
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 
-theme: jekyll-theme-chirpy  # Import the theme
-lang: es-ES                 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed, default 'en'.
-timezone: Europe/Madrid     # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
+theme: jekyll-theme-chirpy
 title: Daniel Garrido Sánchez
 tagline: DevOps and Cloud Engineer
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: Tu blog sobre las ultimas tecnologias cloud.
+theme_mode: dark
 
-url: "https://gareda.github.io" # Fill in the protocol & hostname for your site, without '/'.
+timezone: Europe/Madrid
+lang: es-ES
+
+url: "https://gareda.github.io"
+avatar: https://avatars.githubusercontent.com/u/7642794?s=400&u=1007d9e027d75fb17f8f5da48f0339fd02ebe3db&v=4
 
 github:
-  username: gareda # change to your github username
+  username: gareda
 
 social:
   name: Daniel Garrido Sánchez
@@ -23,23 +22,15 @@ social:
     - https://www.linkedin.com/in/danielgarridosanchez
     - https://www.credly.com/users/danielgarridosanchez/badges
 
-google_site_verification: # fill in to your verification string
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
-
+google_site_verification: # fill in to your verification string (The end of `jekyll-seo-tag` settings)
 google_analytics:
   id: G-DZ6EL9C41F
-
-theme_mode: dark # Prefer color scheme setting. [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 # e.g. 'https://cdn.com'
 img_cdn:
-
-# the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/7642794?s=400&u=1007d9e027d75fb17f8f5da48f0339fd02ebe3db&v=4
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
